@@ -1,0 +1,4 @@
+#! /usr/local/bin/csi -script
+(print (eval (with-input-from-string
+              (car (command-line-arguments))
+              read)))
